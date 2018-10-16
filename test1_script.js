@@ -26,17 +26,17 @@ client.connect((err) => {
       }
     });
   } else {
-  client.query("SELECT * FROM famous_people WHERE id = $1", [argument], (err, result) => {
-    console.log(`Searching...`);
-    if(err) {
-      return console.error("Connection Error", err);
-    } else {
-      foundPeopleById(result.rows);
-      client.end();
-      }
-    });
-  }
-});
+    client.query("SELECT * FROM famous_people WHERE id = $1", [argument], (err, result) => {
+      console.log(`Searching...`);
+      if(err) {
+        return console.error("Connection Error", err);
+      } else {
+        foundPeopleById(result.rows);
+        client.end();
+        }
+      });
+    }
+  });
 
 
 function foundPeople(input) {
