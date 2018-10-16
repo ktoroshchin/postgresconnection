@@ -1,7 +1,7 @@
 'use strict';
-const settings = require("./settings"); // settings.json
-const argument = process.argv[2];
+const settings = require("./settings");
 const queryPrint = require('./helper_functions')
+const argument = process.argv[2];
 
 
 const knex = require('knex')({
