@@ -40,22 +40,3 @@ if(isNaN(argument)) {
   })
   .finally(() => knex.destroy());
 }
-
-
-//
-// function foundPeople(result) {
-//   console.log(`Found ${result.length} person by the name ${argument} : `);
-//   for(const people in result) {
-//     console.log(`- ${result[people].id} : ${result[people].first_name} ${result[people].last_name} , born '${result[people].birthdate.toString().slice(0,15)}'`);
-//   }
-// }
-//
-//
-// function foundPeopleById(result) {
-//   if(result.length === 0) {
-//     console.log(`No match people with id: ${argument} in test1_db`);
-//   }
-//   for(const people in result) {
-//     console.log(`- ${result[people].id} : ${result[people].first_name} ${result[people].last_name} , born '${result[people].birthdate.toString().slice(0,15)}'`);
-//   }
-// }

@@ -32,10 +32,3 @@ const addPerson = function(argument) {
 };
 
 addPerson(argument);
-
-// function foundPeople(result) {
-//   console.log(`Found ${result.length} person by the name ${argument} : `);
-//   for(const people in result) {
-//     console.log(`- ${result[people].id} : ${result[people].first_name} ${result[people].last_name} , born '${result[people].birthdate.toString().slice(0,15)}'`);
-//   }
-// }
